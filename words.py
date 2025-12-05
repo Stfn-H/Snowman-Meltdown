@@ -1,2 +1,2 @@
 # List of secret words
-WORDS = ["python", "git", "github", "snowman", "meltdown", "snow", "ice"]
+WORDS = ["python", "git", "github", "snowman", "meltdown", "snow", "ice", "masterschool"]
