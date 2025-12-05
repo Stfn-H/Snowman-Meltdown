@@ -4,11 +4,23 @@ from words import WORDS
 
 
 def get_random_word():
-    """Selects a random word from the list."""
+    """
+    Select and return a random word from the WORDS list.
+    """
     return WORDS[random.randint(0, len(WORDS) - 1)]
 
 
 def display_game_state(mistakes, secret_word, guessed_letters):
+    """
+    Display the current snowman stage and the partially revealed secret word.
+
+    :param mistakes: Number of incorrect guesses made so far.
+    :type mistakes: int
+    :param secret_word: The word the player is trying to guess.
+    :type secret_word: str
+    :param guessed_letters: Letters correctly guessed by the player.
+    :type guessed_letters: list
+    """
     # Display the snowman stage for the current number of mistakes.
     print(STAGES[mistakes])
     # Build a display version of the secret word.
@@ -24,6 +36,13 @@ def display_game_state(mistakes, secret_word, guessed_letters):
 
 
 def play_game():
+    """
+    Run a single round of the Snowman Meltdown game.
+
+    Handles the game loop, input validation, tracking mistakes, checking
+    guessed letters, and displaying win/lose messages.
+    Does not return a value; prints the game state to the console.
+    """
     secret_word = get_random_word()
     mistakes = 0
     guessed_letters = []

@@ -1,4 +1,6 @@
-# Snowman ASCII Art stages
+"""
+ASCII-Art Stages for snowman meltdown
+"""
 STAGES = [
     # Stage 0: Full snowman
     """
@@ -15,7 +17,7 @@ STAGES = [
      /___\\ 
      (o o) 
      ( : ) 
-      (:) 
+    (  :  ) 
     """,
 
     # Stage 2:
@@ -30,7 +32,7 @@ STAGES = [
     """
        ___ 
       /___\\
-      (o o)
+      (o x)
       (   )
     """,
 
@@ -38,8 +40,8 @@ STAGES = [
     """
        ___ 
       /___\\
-      (o o)
-       ( )
+      (o x)
+     (     )
     """,
 
     # Stage 4:
